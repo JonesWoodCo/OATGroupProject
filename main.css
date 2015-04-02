@@ -11,6 +11,7 @@ body{
     margin: 0px;
     padding: 0px;
     color: #e6e6e6;
+    text-align: center;
     
 }
 a:hover{
@@ -72,6 +73,7 @@ nav li a {
     text-align: center;
     margin-top: 50px;
     width: 100%;
+    display: inline;
 }
 #content>h1{
     font-size: 3.5em;
