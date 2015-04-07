@@ -1,0 +1,81 @@
+/*/////////////////////////////////////////////
+/////////////////   general ///////////////////
+/////////////////////////////////////////////*/
+
+body{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    background: #444443;
+    margin: 0px;
+    padding: 0px;
+    color: #e6e6e6;
+    text-align: center;
+    
+}
+a:hover{
+    color: #f7384a;
+}
+
+
+
+/*/////////////////////////////////////////////
+///////////////   section-top  ////////////////
+/////////////////////////////////////////////*/
+
+#top {	
+	
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 35px;
+    background: #000000;
+    text-align: center;
+}
+ul{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+.mainNav {
+    opacity: 1.0;
+    display: inline-block;
+    padding-top: 4px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+nav li a {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*/////////////////////////////////////////////
+//////// home-section-content  ////////////////
+/////////////////////////////////////////////*/
+
+#content{
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    display: inline;
+}
+#content>h1{
+    font-size: 3.5em;
+    text-shadow: 2px 2px #303030;
+}
