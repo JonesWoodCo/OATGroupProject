@@ -49,11 +49,102 @@
 		</section>
 		<section id="content">
 			<h1 style="color: #fcfce7" >Challenges Facing Mobile Technology</h1>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
+			<img src=''>
 		</section>
+		<div style="height: 390px; width: 1000px; margin-top: 50px; margin-bottom: 50px;" class='points'> <!--CHANGE height after number of tiles or points are decided-->
+				<div style="height: 100%; width: 125px;" class="tiles">
+					<img id='digitalID' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="digitalidentification.png">
+					<img id='augReality' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="augmentedreality.png">
+					<img id='mobilePayment'style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="mobilepayments.png">
+					<img id='modularDesigns' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="modulardesigns.png">
+					<img id='com2comcom' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="com2comcom.png">
+					<img id='humanInt'style="margin: 0px; padding: 0px; border: 0px; display: block; width: 250px; height: 65px;" src="humanintegration.png">
+				</div>
+				<div class="expanded">
+					<style>
+						.expanded{
+							display: inline;
+							float: right;
+							
+						}
+						.tiles{
+							display: inline;
+							float: left;
+						}
+						.points{
+							text-align: center;
+							margin-left: auto;
+							margin-right: auto;
+							background-color: #d2e151;
+						}
+						.divider{
+							height: 5px;
+							margin-top: 25px;
+							margin-bottom: 25px;
+							width: 70%;
+							background-color: #fff;
+							margin-left: auto;
+							margin-right: auto;
+							text-align: center;
+						}
+					</style>
+					
+					<script>
+						$(document).ready(function(){
+							$('#digitalIDpop').hide();
+							$('#augRealitypop').hide();
+							$('#mobilePaymentpop').hide();
+							$('#modularDesignspop').hide();
+							$('#com2comcompop').hide();
+							$('#humanIntpop').hide();
+							
+					       
+						 $('#digitalID').mouseenter(function() {
+							$('#digitalIDpop').toggle();
+						 });
+						 $('#digitalID').mouseleave(function() {
+							$('#digitalIDpop').toggle();
+						 });
+						 $('#augReality').mouseenter(function() {
+							$('#augRealitypop').toggle();
+						 });
+						 $('#augReality').mouseleave(function() {
+							$('#augRealitypop').toggle();
+						 });
+						 $('#mobilePayment').mouseenter(function() {
+							$('#mobilePaymentpop').toggle();
+						 });
+						 $('#mobilePayment').mouseleave(function() {
+							$('#mobilePaymentpop').toggle();
+						 });
+						 $('#modularDesigns').mouseenter(function() {
+							$('#modularDesignspop').toggle();
+						 });
+						 $('#modularDesigns').mouseleave(function() {
+							$('#modularDesignspop').toggle();
+						 });
+						 $('#com2comcom').mouseenter(function() {
+							$('#com2comcompop').toggle();
+						 });
+						 $('#com2comcom').mouseleave(function() {
+							$('#com2comcompop').toggle();
+						 });
+						 $('#humanInt').mouseenter(function() {
+							$('#humanIntpop').toggle();
+						 });
+						 $('#humanInt').mouseleave(function() {
+							$('#humanIntpop').toggle();
+						 });
+					       });
+					</script>
+					
+					<img id='digitalIDpop' src='digitalIdentificationpop.png'>
+					<img id='augRealitypop' src='augmentedRealitypop.png'>
+					<img id='mobilePaymentpop' src='mobilepaymentspop.png'>
+					<img id='modularDesignspop' src='modulardesignspop.png'>
+					<img id='com2comcompop' src='com2comcompop.png'>
+					<img id='humanIntpop' src='humanintegrationpop.png'>	
+				</div>
+			</div>
 	</body>
 </html>
