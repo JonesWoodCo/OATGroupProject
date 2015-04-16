@@ -23,7 +23,6 @@
 		<script src="jquery.js"></script>
 		<script src="jquery-ui.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="oatProject.js"></script>
 		
 		<!--favicon-->
 		<link rel="icon" type="image/png" href="iphoneFavicon.png">
@@ -49,12 +48,75 @@
 			<h1 style="color: #fcfce7" >Daily Use</h1>
 			
 			<img style="height:350px;" src="dailyuses.png">
-				
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
+			<div class='divider'></div>	
+			<div style="height: 375px; width: 70%; margin-top: 50px; margin-bottom: 50px;" class='points'> <!--CHANGE height after number of tiles or points are decided-->
+				<div style="height: 100%; width: 125px;" class="tiles">
+					<img id='gyroTile' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="gyroTile.jpg">
+					<img id='bluetoothTile'style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="bluetoothTile.jpg">
+					<img id='wifiTile' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="wifiTile.jpg"> 
+					
+				</div>
+				<div class="expanded">
+					<style>
+						.expanded{
+							display: inline;
+							float: right;
+							
+						}
+						.tiles{
+							display: inline;
+							float: left;
+						}
+						.points{
+							text-align: center;
+							margin-left: auto;
+							margin-right: auto;
+							background-color: #000;
+						}
+						.divider{
+							height: 5px;
+							margin-top: 25px;
+							margin-bottom: 25px;
+							width: 70%;
+							background-color: #fff;
+							margin-left: auto;
+							margin-right: auto;
+							text-align: center;
+						}
+					</style>
+					
+					<script>
+						$(document).ready(function(){
+							$('#gyroSlide').hide();
+							$('#bluetoothSlide').hide();
+							$('#wifiSlide').hide();
+					       
+						 $('#gyroTile').mouseenter(function() {
+							$('#gyroSlide').toggle();
+						 });
+						 $('#gyroTile').mouseleave(function() {
+							$('#gyroSlide').toggle();
+						 });
+						 $('#bluetoothTile').mouseenter(function() {
+							$('#bluetoothSlide').toggle();
+						 });
+						 $('#bluetoothTile').mouseleave(function() {
+							$('#bluetoothSlide').toggle();
+						 });
+						 $('#wifiTile').mouseenter(function() {
+							$('#wifiSlide').toggle();
+						 });
+						 $('#wifiTile').mouseleave(function() {
+							$('#wifiSlide').toggle();
+						 });
+					       });
+					</script>
+					
+					<img id='gyroSlide' src='gyroInfo.png'>
+					<img id='wifiSlide' src='wifiInfo.png'>
+					<img id='bluetoothSlide' src='bluetoothInfo.png'>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>

@@ -19,10 +19,6 @@
 		<!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="future.css"/>
 		    
-		<!--mobile and tablet styling 
-		<link rel="stylesheet" media="handheld, only screen and (max-device-width: 600px)" href="styles/mobile.css">
-		<link rel="stylesheet" media="only screen and (min-width: 601px) and (max-width: 800px)" href="styles/tablet.css">
-		 -->   
 		<!-- JAVASCRIPT -->
 		<script src="jquery.js"></script>
 		<script src="jquery-ui.js"></script>
@@ -48,18 +44,62 @@
 			</nav>
 			<div style="background-color: #212020; height: 455px; background-image: url('images/stars.png');" class="jedi">
 				<p style="color: #fff; font-size: 1.9em; padding-top: 50px;" >The Future of Mobile Technology</p>
-				<img style="padding-top: 25px; height: 300px;" src="NateIsAJedi.png">
+				<img style="padding-top: 25px; height: 300px;" src="NateIsAJedi.png"> 
 			</div>
 			
-			<div style="height: 400px; width: 70%; margin-left: auto; margin-right: auto; margin-top: 50px; margin-bottom: 50px;" class='points'> <!--CHANGE height after number of tiles or points are decided-->
-				<div style="display: inline; float: left; height: 100%; width: 100px;" class="tiles">
-					<img style="margin: 0px; padding: 0px; border: 0px; display: block; background-color: red; width: 100px; height: 100px;" src="">
-					<img style="margin: 0px; padding: 0px; border: 0px; display: block; background-color: black; width: 100px; height: 100px;" src="">
-					<img style="margin: 0px; padding: 0px; border: 0px; display: block; background-color: blue; width: 100px; height: 100px;" src="">
-					<img style="margin: 0px; padding: 0px; border: 0px; display: block; background-color: yellow; width: 100px; height: 100px;" src="">
+			<div style="height: 375px; width: 70%; margin-top: 50px; margin-bottom: 50px;" class='points'> <!--CHANGE height after number of tiles or points are decided-->
+				<div style="height: 100%; width: 125px;" class="tiles">
+					<img id='gyroTile' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="gyroTile.jpg">
+					<img id='wifiTile' style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="wifiTile.jpg">
+					<img id='bluetoothTile'style="margin: 0px; padding: 0px; border: 0px; display: block; width: 125px; height: 125px;" src="bluetoothTile.jpg">
 				</div>
-				<div class="expanded" style="height: 100%; float: left; display: inline;">
-					talking point bla bla bla
+				<div class="expanded">
+					<style>
+						.expanded{
+							display: inline;
+							float: left;
+						}
+						.tiles{
+							display: inline;
+							float: left;
+						}
+						.points{
+							text-align: center;
+							margin-left: auto;
+							margin-right: auto;
+						}
+					</style>
+					
+					<script>
+						$(document).ready(function(){
+							$('#gyroSlide').hide();
+							$('#bluetoothSlide').hide();
+							$('#wifiSlide').hide();
+					       
+						 $('#gyroTile').mouseenter(function() {
+							$('#gyroSlide').toggle();
+						 });
+						 $('#gyroTile').mouseleave(function() {
+							$('#gyroSlide').toggle();
+						 });
+						 $('#bluetoothTile').mouseenter(function() {
+							$('#bluetoothSlide').toggle();
+						 });
+						 $('#bluetoothTile').mouseleave(function() {
+							$('#bluetoothSlide').toggle();
+						 });
+						 $('#wifiTile').mouseenter(function() {
+							$('#wifiSlide').toggle();
+						 });
+						 $('#wifiTile').mouseleave(function() {
+							$('#wifiSlide').toggle();
+						 });
+					       });
+					</script>
+					
+					<img id='gyroSlide' src='gyroInfo.png'>
+					<img id='bluetoothSlide' src='wifiInfo.png'>
+					<img id='wifiSlide' src='bluetoothInfo.png'>
 				</div>
 			</div>
 			
