@@ -47,13 +47,111 @@
 				</ul>
 			</nav>
 		</section>
+		<style>
+			body{
+				background-color: #ea4b36;
+			}
+			.timeline{
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 0px;
+				background-image: url('timelineline.png');
+				height: 100px;
+				width: 1000px;
+			}
+			.tlPoint{
+				height: 100%;
+				display: inline;
+				float: left;
+				cursor: pointer;
+			}
+		</style>
+		<script>
+						$(document).ready(function(){
+							$('#pop2007').hide();
+							$('#pop1902').hide();
+							$('#pop1938').hide();
+							$('#pop1973').hide();
+							$('#pop1983').hide();
+							$('#pop1991').hide();
+							$('#pop2001').hide();
+					       
+						 $('#point1902').mouseenter(function() {
+							$('#pop1902').toggle();
+						 });
+						 $('#point1902').mouseleave(function() {
+							$('#pop1902').toggle();
+						 });
+						 $('#point1938').mouseenter(function() {
+							$('#pop1938').toggle();
+						 });
+						 $('#point1938').mouseleave(function() {
+							$('#pop1938').toggle();
+						 });
+						 $('#point1973').mouseenter(function() {
+							$('#pop1973').toggle();
+						 });
+						 $('#point1973').mouseleave(function() {
+							$('#pop1973').toggle();
+						 });
+						 $('#point1983').mouseenter(function() {
+							$('#pop1983').toggle();
+						 });
+						 $('#point1983').mouseleave(function() {
+							$('#pop1983').toggle();
+						 });
+						 $('#point1991').mouseenter(function() {
+							$('#pop1991').toggle();
+						 });
+						 $('#point1991').mouseleave(function() {
+							$('#pop1991').toggle();
+						 });
+						 $('#point2001').mouseenter(function() {
+							$('#pop2001').toggle();
+						 });
+						 $('#point2001').mouseleave(function() {
+							$('#pop2001').toggle();
+						 });
+						  $('#point2007').mouseenter(function() {
+							$('#pop2007').toggle();
+						 });
+						 $('#point2007').mouseleave(function() {
+							$('#pop2007').toggle();
+						 });
+					       });
+					</script>
 		<section id="content">
-			<h1 style="color: #fcfce7" >History of Mobile Technology</h1>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
-			<p style="font-size: 1.3em; color: #474746" class="by"> -add all the text here add all the text here add all the text here</p>
+			<h1 style="color: #fcfce7; margin-bottom: 5px;" >History of Mobile Technology</h1>
+			<img style="height:350px;" src="historyfang.png">
 		</section>
+		<div class='timeline'>
+			<img style='margin-left: 30px; margin-right: 30px;' class='tlPoint' id='point1902' src='1902.png'>
+			<img style='margin-right: 95px;' class='tlPoint' id='point1938' src='1938.png'>
+			<img style='margin-right: 10px;' class='tlPoint' id='point1973' src='1973.png'>
+			<img style='margin-right: 65px;' class='tlPoint' id='point1983' src='1983.png'>
+			<img style='margin-right: 25px;' class='tlPoint' id='point1991' src='1991.png'>
+			<img style='margin-right: 10px;' class='tlPoint' id='point2001' src='2001.png'>
+			<img style='margin-right: 10px;' class='tlPoint' id='point2007' src='2007.png'>
+		</div>
+		<div class='datepop'>
+			<style>
+				.datepop{
+					height: 400px;
+					width: 1000px;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+					margin-bottom: 30px;
+				}
+			</style>
+			<img src='1938pop.png' id='pop1938' class='poppoints'>
+			<img src='1973pop.png' id='pop1973' class='poppoints'>
+			<img src='1983pop.png' id='pop1983' class='poppoints'>
+			<img src='1991pop.png' id='pop1991' class='poppoints'>
+			<img src='2001pop.png' id='pop2001' class='poppoints'>
+			<img src='2007pop.png' id='pop2007' class='poppoints'>
+			<img src='1902pop.png' id='pop1902' class='poppoints'>
+		</div>
 	</body>
 </html>
